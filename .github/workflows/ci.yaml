@@ -12,16 +12,16 @@ name: DevSecOps Pipeline - Food Delivery (Scan & Build)
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
     paths-ignore:
       - "terraform/**"
-      - "*.md"
+      - "**/*.md"
       - ".github/dependabot.yml"
   pull_request:
-    branches: [master]
+    branches: [master, main]
     paths-ignore:
       - "terraform/**"
-      - "*.md"
+      - "**/*.md"
   workflow_dispatch:
 
 env:
