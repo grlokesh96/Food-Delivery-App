@@ -9,7 +9,7 @@ metadata:
   labels:
     app: food-delivery-admin
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: food-delivery-admin
